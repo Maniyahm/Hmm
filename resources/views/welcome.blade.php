@@ -17,8 +17,7 @@
         </p>
         
         <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Lets Get Started →</a>
-            <a href="#" class="btn btn-outline">Discover More →</a>
+            <a href="{{ route('contact')}}" class="btn btn-primary">Lets Get Started →</a>
         </div>
     </div>
 </section>
@@ -41,9 +40,9 @@
                     <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Mobile App Development</h4>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Strategy Consultation</h4>
                     <p class="text-gray-600">
-                        Development of user-friendly mobile app using android ios and cross-plateform application.
+                      Helping firms define and implement powerful strategies to drive growth and competitive advantage.
                     </p>
                 </div>
                 
@@ -73,7 +72,177 @@
     </div>
 </section>
 
+<section>
+    <body class="bg-gray-50">
+        <div class="container mx-auto mt-16 px-4">
+            <h2 class="text-center text-3xl font-bold text-gray-800">Our expertise on</h2>
+            <h3 class="text-center text-lg text-gray-500 mb-12">Popular Website & Mobile App Technologies for MVP Development</h3>
+        
+            <!-- Tabs Section -->
+            <div class="flex flex-wrap justify-center mb-8">
+                <!-- Tab Buttons -->
+                <button id="front-end-tab" class="tabs-button px-6 py-2 m-2 text-gray-800 bg-white rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none transition-colors duration-300">Front end</button>
+                <button id="backend-tab" class="tabs-button px-6 py-2 m-2 text-gray-800 bg-white rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none transition-colors duration-300">Backend</button>
+                <button id="mobile-tab" class="tabs-button px-6 py-2 m-2 text-gray-800 bg-white rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none transition-colors duration-300">Mobile</button>
+                <button id="devops-tab" class="tabs-button px-6 py-2 m-2 text-gray-800 bg-white rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none transition-colors duration-300">DevOps & Cloud</button>
+                <button id="integration-tab" class="tabs-button px-6 py-2 m-2 text-gray-800 bg-white rounded-full border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none transition-colors duration-300">Third Party Integration</button>
+            </div>
+        
+            <!-- Technologies Content for Tabs -->
+            <div id="front-end" class="tech-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <!-- Front-end Technologies -->
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/angular-icon.png')}}" alt="Angular JS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Angular JS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/typescript-icon.png')}}" alt="TypeScript" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">TypeScript</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/react-icon.png')}}" alt="React JS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">React JS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/nextjs-icon.jpg')}}" alt="Next JS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Next JS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/vuejs-icon.png')}}" alt="Vue JS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Vue JS</h5>
+                </div>
+            </div>
+        
+            <div id="backend" class="tech-grid hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <!-- Back-end Technologies -->
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/laravel.png')}}" alt="Laravel" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Laravel</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/nodejs.jpg')}}" alt="Node JS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Node JS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/php.png')}}" alt="PHP" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">PHP</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/python.png')}}" alt="Python" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Python</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/mysql.png')}}" alt="MySQL" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">MySQL</h5>
+                </div>
+            </div>
+        
+            <div id="mobile" class="tech-grid hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <!-- Mobile Technologies -->
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/ios.png')}}" alt="iOS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">iOS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/android.png')}}" alt="Android" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Android</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/react native.png')}}" alt="React Native" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">React Native</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/fluter.jpg')}}" alt="Flutter" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Flutter</h5>
+                </div>
+                
+            </div>
+    
+            <div id="devops" class="tech-grid hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/rest.png')}}" alt="REST API" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">REST API</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/graph.jpg')}}" alt="GraphQL" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">GraphQL</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/stripe.jpg')}}" alt="Payment Gateways" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Stripe Payment Gateways</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/social.jpg')}}" alt="Social Auth" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Social Auth</h5>
+                </div>
+                <!-- DevOps Technologies -->
 
+            </div>
+    
+            <div id="integration" class="tech-grid hidden grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-16">
+                <!-- Integration Technologies -->
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/aws.png')}}" alt="AWS" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">AWS</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/twillo.png')}}" alt="Azure" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Twillo</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/msg91.jpg')}}" alt="Docker" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">MSG91</h5>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-4 flex items-center justify-center w-24 h-24 mx-auto">
+                        <img src="{{ asset('images/kubernetes.png')}}" alt="Kubernetes" class="w-16 h-16">
+                    </div>
+                    <h5 class="font-semibold text-lg">Kubernetes</h5>
+                </div>
+            </div>
+        </div>
 <style>
     /* Reset any potential margin/padding that might affect width */
     body, html {
@@ -171,4 +340,52 @@
         }
     }
 </style>
+
+
+<script>
+    // Function to handle tab switching
+    function switchTab(tabId) {
+        // Hide all tabs content
+        document.querySelectorAll('.tech-grid').forEach(function(tabContent) {
+            tabContent.classList.add('hidden');
+        });
+
+        // Remove active class from all tabs
+        document.querySelectorAll('.tabs-button').forEach(function(tabButton) {
+            tabButton.classList.remove('bg-blue-500', 'text-white');
+            tabButton.classList.add('bg-white', 'text-gray-800');
+        });
+
+        // Show the selected tab content
+        document.getElementById(tabId).classList.remove('hidden');
+        
+        // Set the active tab
+        document.getElementById(tabId + '-tab').classList.remove('bg-white', 'text-gray-800');
+        document.getElementById(tabId + '-tab').classList.add('bg-blue-500', 'text-white');
+    }
+
+    // Event listeners for tab buttons
+    document.getElementById('front-end-tab').addEventListener('click', function() {
+        switchTab('front-end');
+    });
+
+    document.getElementById('backend-tab').addEventListener('click', function() {
+        switchTab('backend');
+    });
+
+    document.getElementById('mobile-tab').addEventListener('click', function() {
+        switchTab('mobile');
+    });
+
+    document.getElementById('devops-tab').addEventListener('click', function() {
+        switchTab('devops');
+    });
+
+    document.getElementById('integration-tab').addEventListener('click', function() {
+        switchTab('integration');
+    });
+
+    // Set initial tab to Front End
+    switchTab('front-end');
+</script>
 @endsection

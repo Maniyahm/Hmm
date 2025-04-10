@@ -3,7 +3,7 @@
     <div class="container mx-60 px-40">
         <div class="flex items-center justify-between">
             <!-- Logo -->
-            <a href="3" class="flex items-center ml-40 h-20">
+            <a href="3" class="flex items-center ml-20 h-20">
                 <img src="{{ asset('images/logo.png') }}" alt="HM²" class="h-12">
             </a>
             
