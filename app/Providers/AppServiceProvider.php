@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Teammember;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,8 +19,10 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot()
     {
-        //
+        View::composer(['components.member', 'other-views'], function ($view) {
+            $view->with('teammembers', Teammember::all());
+        });
     }
 }
