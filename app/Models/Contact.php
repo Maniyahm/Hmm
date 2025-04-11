@@ -13,5 +13,6 @@ class Contact extends Model
         'last_name', 
         'email', 
         'mobile',
+        'message'
     ];  
 }

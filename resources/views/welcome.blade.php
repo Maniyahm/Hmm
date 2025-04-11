@@ -243,7 +243,8 @@
                 </div>
             </div>
         </div>
-        @include('components.member')
+        {{-- @include('components.member') --}}
+        @include('components.project')
 <style>
     /* Reset any potential margin/padding that might affect width */
     body, html {

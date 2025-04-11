@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 
 Route::get('/contact',[HomeController::class,'index'])->name('contact');
+Route::post('/contact/store',[HomeController::class,'store'])->name('contact.store');
+Route::get('/team',[HomeController::class,'team'])->name('team');

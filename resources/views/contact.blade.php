@@ -7,6 +7,7 @@
         <h1 class="main-heading ml-0">Let's Transform Your Vision into Reality</h1>
         
         <div class="content-grid">
+           
             <!-- Left side - Company Info -->
             <div class="company-info">
                 <h3 class="gradient-text">Global customer footprint</h3>
@@ -43,7 +44,7 @@
                 <div class="form-container">
                     <h2 class="form-title">Project Enquiry</h2>
                     
-                    <form method="POST" action="{{ route('contact') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('contact.store') }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-row">
                             <div class="form-group">
@@ -64,54 +65,15 @@
                             <div class="form-group">
                                 <label for="phone">Mobile Phone <span class="required">*</span></label>
                                 <div class="phone-input">
-                                    <div class="country-code">
-                                        <img src="https://flagcdn.com/w20/de.png" alt="Germany" class="flag">
-                                        <span class="dropdown-arrow">▼</span>
-                                    </div>
+                                    
                                     <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                                 </div>
                             </div>
                         </div>
-                        
+                                                
                         <div class="form-group">
-                            <label for="service">Select a Service <span class="required">*</span></label>
-                            <select id="service" name="service" required>
-                                <option value="" selected>Select the service</option>
-                                <option value="web">Web Development</option>
-                                <option value="mobile">Mobile App Development</option>
-                                <option value="ecommerce">E-commerce Solutions</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="budget">Budget <span class="required">*</span></label>
-                                <select id="budget" name="budget" required>
-                                    <option value="" selected>Select budget</option>
-                                    <option value="5k">Under $5,000</option>
-                                    <option value="10k">$5,000 - $10,000</option>
-                                    <option value="25k">$10,000 - $25,000</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="timeline">How soon you want to start?</label>
-                                <select id="timeline" name="timeline">
-                                    <option value="" selected>Select timeline</option>
-                                    <option value="immediate">Immediately</option>
-                                    <option value="month">Within a month</option>
-                                    <option value="quarter">Next quarter</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="requirement">Requirement <span class="required">*</span></label>
-                            <select id="requirement" name="requirement" required>
-                                <option value="" selected>Select the requirement</option>
-                                <option value="new">New Project</option>
-                                <option value="upgrade">Upgrade Existing Project</option>
-                                <option value="maintenance">Maintenance & Support</option>
-                            </select>
+                            <label for="message">Message <span class="required">*</span></label>
+                            <input type="textarea" id="message" name="message" placeholder="Requirement*" required>
                         </div>
                         
                         
@@ -123,8 +85,22 @@
             </div>
         </div>
     </div>
+      <!-- Google Maps Section -->
+      <div class="w-full h-[450px] rounded-lg overflow-hidden shadow-md flex items-center justify-center">
+        <div class="w-[calc(100%-60px)] h-[calc(100%-60px)]">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!4v1744368655889!6m8!1m7!1sBKHsUve9dL-ZCJ8csbaD5w!2m2!1d21.23326160332686!2d72.86331372600114!3f354.63913720430384!4f14.537267834670942!5f0.7820865974627469"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                width="70%" 
+                height="80%" 
+                style="border:0; margin-left: 250px; margin-right: 30px; margin-top: 70px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
 </section>
-
+<iframe ></iframe>
 <style>
     /* General Styles */
     body, html {
