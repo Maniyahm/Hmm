@@ -10,9 +10,9 @@
         @foreach($teammembers as $member)
             <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-2">
                 <div class="relative overflow-hidden h-64">
-                    <img 
-                        src="{{ asset('storage/' . $member->image) }}" 
-                        alt="{{ $member->name }}" 
+                    <img
+                        src="{{ asset('storage/' . $member->image) }}"
+                        alt="{{ $member->name }}"
                         class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                     >
                 </div>
