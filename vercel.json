@@ -11,9 +11,11 @@
     }
   ],
  "routes": [
-    "src": "/(css/)?([a-zA-Z0-9_\\-]+\\.(ico|txt|webp|css|js|png|jpg))$",
-            "dest": "/public/$1$2"
-  ],
+        { "src": "/build/(.*)", "dest": "/public/build/$1" },
+        { "src": "/resources/(.*)", "dest": "/public/resources/$1" },
+        { "src": "/favicon/(.*)", "dest": "/public/favicon/$1" },
+        { "src": "/(.*)", "dest": "/api/index.php" }
+    ],
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
