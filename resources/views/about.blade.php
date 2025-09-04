@@ -6,12 +6,15 @@
     <div class="hero-content">
         <div class="hero-text">
             <p class="subtitle">We Are Hm²</p>
-            <h1>Your Partner For Web<br>And Mobile App Services</h1>
+            <h1>Your Partner For Web And Mobile App Services</h1>
         </div>
 
     </div>
 
 </section>
+<div class="">
+    <img src="{{ asset('images/about-image.webp') }}" alt="Vision Icon" class="">
+</div>
 <section class="about-section">
     <div class="about-content">
         <h2 class="about-title">Who Are We?</h2>
@@ -21,6 +24,7 @@
         <p class="about-text">
             <span class="company-highlight">Hm²</span> We help businesses of all sizes boost their online presence and visibility, ensuring high-quality results with every project.
         </p>
+        <a href="{{ route('team') }}" class="portfolio-btn">Meet Our Team</a>
     </div>
 </section>
 <section class="vision-mission-section">
@@ -66,6 +70,48 @@
 
     </div>
 </section>
+<section class="grow-together-section">
+    <div class="grow-together-container">
+
+        {{-- Header Content --}}
+        <div class="section-header">
+            <h2 class="main-title">Let's thrive together</h2>
+            <p class="main-description">
+                Partner with us and begin an exciting journey to expand your business, powered by our expertise and creativity.
+            </p>
+        </div>
+
+        {{-- Three Columns --}}
+        <div class="features-grid">
+
+            {{-- Shared Vision --}}
+            <div class="feature-item">
+                <h3 class="feature-title">Unified Vision</h3>
+                <p class="feature-description">
+                    Synchronize your growth with ours as we craft a shared plan for success, driven by common objectives.
+                </p>
+            </div>
+
+            {{-- Strategic Partnership --}}
+            <div class="feature-item">
+                <h3 class="feature-title">Collaborative Partnership</h3>
+                <p class="feature-description">
+                    Utilize our strategic approach to tackle business challenges with confidence and achieve your goals.
+                </p>
+            </div>
+
+            {{-- Continuous Support --}}
+            <div class="feature-item">
+                <h3 class="feature-title">Ongoing Support</h3>
+                <p class="feature-description">
+                    Rely on our constant support as you navigate your business journey, ensuring smooth and steady growth.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <section class="core-values-section">
     <div class="core-values-container">
 
@@ -108,7 +154,330 @@
         </div>
     </div>
 </section>
+<section class="success-journey-section">
+    <div class="success-journey-container">
+        <div class="cta-card">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2 class="cta-title">Start Your Success Journey With Us Today!</h2>
+                    <p class="cta-description">
+                        Elevate your business to new heights with us! Contact us now for a
+                        personalized consultation and discover how our innovative, tailored solutions
+                        can drive your business growth.
+                    </p>
+                </div>
+                <div class="cta-button-wrapper">
+                    <a href="{{ route('contact') }}" class="cta-button">
+                        Contact Us →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <style>
+     .success-journey-section {
+        padding: 4rem 0;
+        background: #f8f9fa;
+    }
+
+    .success-journey-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .cta-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 25px;
+        padding: 3rem;
+        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%, rgba(255, 255, 255, 0.05) 100%);
+        pointer-events: none;
+    }
+
+    .cta-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .cta-text {
+        flex: 1;
+        max-width: 700px;
+    }
+
+    .cta-title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .cta-description {
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    .cta-button-wrapper {
+        flex-shrink: 0;
+    }
+
+    .cta-button {
+        background: rgba(255, 255, 255, 0.95);
+        color: #667eea;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .cta-button:hover {
+        background: white;
+        color: #5a67d8;
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .cta-content {
+            gap: 2rem;
+        }
+
+        .cta-title {
+            font-size: 2rem;
+        }
+
+        .cta-card {
+            padding: 2.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .cta-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+        }
+
+        .success-journey-container {
+            padding: 0 1rem;
+        }
+
+        .cta-card {
+            padding: 2rem;
+            border-radius: 20px;
+        }
+
+        .cta-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-journey-section {
+            padding: 3rem 0;
+        }
+
+        .cta-button {
+            padding: 0.9rem 2rem;
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .cta-title {
+            font-size: 1.5rem;
+        }
+
+        .cta-description {
+            font-size: 0.95rem;
+        }
+
+        .cta-card {
+            padding: 1.5rem;
+        }
+    }
+
+    /* Animation */
+    .cta-card {
+        animation: fadeInUp 0.8s ease forwards;
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Hover effect for the entire card */
+    .cta-card:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+        box-shadow: 0 25px 50px rgba(102, 126, 234, 0.4);
+    }
+     .grow-together-section {
+        padding: 6rem 0;
+        background: #f4f8ff;
+        position: relative;
+    }
+
+    .grow-together-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    /* Header */
+    .section-header {
+        margin-bottom: 4rem;
+    }
+
+    .main-title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .main-description {
+        font-size: 1.1rem;
+        color: #6c757d;
+        line-height: 1.7;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Features Grid */
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .feature-item {
+        background: transparent;
+        padding: 2rem 1rem;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+    }
+
+    .feature-description {
+        font-size: 1rem;
+        color: #6c757d;
+        line-height: 1.7;
+        margin: 0;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+        .features-grid {
+            gap: 2rem;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .features-grid {
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        .grow-together-container {
+            padding: 0 1rem;
+        }
+
+        .main-title {
+            font-size: 2rem;
+        }
+
+        .main-description {
+            font-size: 1rem;
+        }
+
+        .grow-together-section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .feature-item {
+            padding: 1.5rem 1rem;
+        }
+
+        .feature-description {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .main-title {
+            font-size: 1.8rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+        }
+
+        .main-description {
+            font-size: 0.95rem;
+        }
+    }
 .core-values-section {
         padding: 5rem 0;
         background: #ffffff;
