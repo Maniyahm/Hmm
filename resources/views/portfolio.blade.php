@@ -45,7 +45,7 @@
                                     <span></span><span></span><span></span>
                                 </div>
                             </div>
-                            <img src="{{ asset('job.png') }}" alt="Restaurant Website" class="project-screenshot">
+                            <img src="{{ asset('images/job.png') }}" alt="Restaurant Website" class="project-screenshot">
                         </div>
                     </div>
                     <div class="portfolio-content">
@@ -72,7 +72,7 @@
                                     <span></span><span></span><span></span>
                                 </div>
                             </div>
-                            <img src="{{ asset('images/affy.png.png') }}" alt="Corporate Website" class="project-screenshot">
+                            <img src="{{ asset('images/affy.png') }}" alt="Corporate Website" class="project-screenshot">
                         </div>
                     </div>
                     <div class="portfolio-content">
@@ -129,7 +129,7 @@
                                     <span></span><span></span><span></span>
                                 </div>
                             </div>
-                            <img src="{{ asset('images/corporate-website.png') }}" alt="Corporate Website" class="project-screenshot">
+                            <img src="{{ asset('images/saudi.png') }}" alt="Corporate Website" class="project-screenshot">
                         </div>
                     </div>
                     <div class="portfolio-content">
@@ -152,7 +152,7 @@
                     <div class="project-badge app-badge">Mobile App</div>
                     <div class="portfolio-image">
                         <div class="phone-mockup">
-                            <img src="{{ asset('bio.png') }}" alt="E-Commerce App" class="project-screenshot">
+                            <img src="{{ asset('images/bio.png') }}" alt="E-Commerce App" class="project-screenshot">
                         </div>
                     </div>
                     <div class="portfolio-content">
@@ -206,7 +206,7 @@
 
                         </div>
                         <p class="project-description">
-                            Developed Eduteck, an educational app powered by Flutter, offering interactive learning modules, quizzes, and progress tracking for an engaging 
+                            Developed Eduteck, an educational app powered by Flutter, offering interactive learning modules, quizzes, and progress tracking for an engaging
                         </p>
                     </div>
                 </div>

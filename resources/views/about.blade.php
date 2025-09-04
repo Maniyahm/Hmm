@@ -8,12 +8,7 @@
             <p class="subtitle">We Are Hm²</p>
             <h1>Your Partner For Web<br>And Mobile App Services</h1>
         </div>
-        <div class="hero-image" style="size: 100ch">
-            {{-- Banner Image --}}
-            <img src="{{ asset('images/download.png') }}"
-            alt="Hm² Technologies Banner"
-            class="developer-illustration">
-        </div>
+
     </div>
 
 </section>
