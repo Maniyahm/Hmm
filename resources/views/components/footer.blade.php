@@ -16,14 +16,12 @@
                         <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 19L12 4L21 19H3Z" stroke="white" stroke-width="2" />
                         </svg>
-                        <span class="text-white font-bold uppercase">COLORLIB.COM</span>
+                        <span class="text-white font-bold uppercase">hm² infotech</span>
                     </div>
                     <p class="text-sm mb-4">
                         A small river named Duden flows by their place and supplies it with the necessary regelialia.
                     </p>
-                    <a href="#" class="text-sm text-white hover:text-gray-300 inline-block">
-                        read more →
-                    </a>
+
                 </div>
 
                 <!-- Discover Column -->
@@ -71,14 +69,14 @@
                 </div>
             </div>
 
-          
+
 
             <!-- Copyright Section -->
             <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <p class="text-xs">
-                        Copyright ©2024 All rights reserved | This template is made with ♥ by 
-                        <a href="#" class="text-white hover:text-gray-300">Colorlib.com</a>
+                        Copyright ©2025 All rights reserved |
+                        <a href="https://hmminfotech.vercel.app/" class="text-white hover:text-gray-300">hmminfotech.vercel.app</a>
                     </p>
                 </div>
                 <div class="flex space-x-6">

@@ -4,7 +4,7 @@
         <div class="container">
             <div class="section-header text-center">
                 <p class="section-subtitle">Industries</p>
-                <h2 class="section-title">Industries</h2>
+                <h2 class="section-title">Sector Solutions</h2>
             </div>
 
             <div class="industries-grid">
@@ -22,7 +22,7 @@
                     <h3 class="industry-title">Insurance</h3>
                 </div>
 
-                <div class="industry-card active">
+                <div class="industry-card">
                     <div class="industry-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -33,14 +33,14 @@
                     <div class="industry-icon">
                         <i class="fas fa-truck"></i>
                     </div>
-                    <h3 class="industry-title">Logistics & Transportation</h3>
+                    <h3 class="industry-title">Transportation</h3>
                 </div>
 
                 <div class="industry-card">
                     <div class="industry-icon">
                         <i class="fas fa-industry"></i>
                     </div>
-                    <h3 class="industry-title">Manufacturing (OEM)</h3>
+                    <h3 class="industry-title">Manufacturing(OEM)</h3>
                 </div>
             </div>
 

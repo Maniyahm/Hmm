@@ -113,3 +113,62 @@
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
+
+
+
+
+
+  {{-- Project 2: JobPortal Website --}}
+  {{-- <a href="https://jobportal.sgcci.in/" target="_blank"> --}}
+    {{-- <div class="portfolio-item website-project" data-category="website">
+        <div class="portfolio-card">
+            <div class="project-badge website-badge">Website</div>
+            <div class="portfolio-image">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <img src="{{ asset('job.png') }}" alt="Restaurant Website" class="project-screenshot">
+                </div>
+            </div>
+            <div class="portfolio-content">
+                <div class="project-header">
+                    <h3 class="project-title">Job-portel</h3>
+                </div>
+                <p class="project-description">
+                    SGCCI Job Portal, where recruiters can find top talent and employees can explore exciting career opportunities. Whether you're hiring or job hunting, we connect the right people to the right roles
+                </p>
+            </div>
+        </div>
+    </div>
+</a> --}}
+
+
+{{-- Project 2: Restaurant Website --}}
+{{-- <a href="https://saudieleagues.com/" target="_blank">
+    <div class="portfolio-item website-project" data-category="website">
+        <div class="portfolio-card">
+            <div class="project-badge website-badge">Website</div>
+            <div class="portfolio-image">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <img src="{{ asset('saudi.png') }}" alt="Restaurant Website" class="project-screenshot">
+                </div>
+            </div>
+            <div class="portfolio-content">
+                <div class="project-header">
+                    <h3 class="project-title">Saudi-e-league</h3>
+                </div>
+                <p class="project-description">
+                    Saudi E-League, the premier destination for competitive esports in Saudi Arabia. Join us for thrilling tournaments, top-tier gameplay, and a community of passionate gamers.
+                </p>
+            </div>
+        </div>
+    </div>
+</a> --}}

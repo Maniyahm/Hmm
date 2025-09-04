@@ -111,10 +111,10 @@
 </section>
 
 {{-- Consultation CTA Section --}}
-<section class="py-12 bg-white">
+<section class="py-2 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <p class="text-gray-600 text-lg leading-relaxed mb-8">
-            No matter the size of your company, we take a consultative approach to ensure optimal outcomes. MegaMinds listens carefully and asks the right questions to understand your unique needs. Our goal is to guide you toward the best solutions for your success.
+            No matter the size of your company, we take a consultative approach to ensure optimal outcomes. HM² listens carefully and asks the right questions to understand your unique needs. Our goal is to guide you toward the best solutions for your success.
         </p>
 
         <a href="{{ route('contact') }}"

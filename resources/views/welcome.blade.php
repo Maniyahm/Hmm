@@ -39,57 +39,11 @@
 </section>
 
 <!-- Achieve More Section -->
-<section class="py-16 bg-white-50">
-    <div class="container mx-auto px-6">
-
-        <!-- "What We Offer" Section -->
-        <div class="mt-8 text-center">
-            <h3 class="text-2xl font-semibold text-gray-800 mb-4">What We Offer</h3>
-            <p class="text-lg text-gray-600 mb-12">
-                We examine all catalysts of transformation – starting from the basics, and well inspire and assist you in making the desired transition.
-            </p>
-
-            <!-- Services Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                <!-- Service Card 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Strategy Consultation</h4>
-                    <p class="text-gray-600">
-                      Helping firms define and implement powerful strategies to drive growth and competitive advantage.
-                    </p>
-                </div>
-
-                <!-- Service Card 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Customized Solutions</h4>
-                    <p class="text-gray-600">
-                        Tailored solutions designed to maximize efficiency and success.
-                    </p>
-                </div>
-
-                <!-- Service Card 3 -->
-                <div class="bg-white rounded-lg shadow-lg p-8 text-center">
-                    <div class="w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Team Collaboration</h4>
-                    <p class="text-gray-600">
-                        Foster collaboration and teamwork to drive innovation.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-@include('components.leadership')
 @include('components.vision')
-@include('components.industry')
+
+@include('components.industry') 
+@include('components.leadership')
+
 <!-- Technologies Section with Holographic Display -->
 <section class="tech-section">
     <div class="container mx-auto px-4">
