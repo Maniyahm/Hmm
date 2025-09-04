@@ -515,70 +515,18 @@
             <!-- Replace the existing YouTube section in your popup with this code -->
             <!-- Replace the existing YouTube section in your popup with this code -->
             <div class="phone-popup-body">
-                @if(auth()->check())
-                @if(auth()->user()->role == 2)
-                <!-- Show only Recruiter Tutorial -->
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=EWjUo3mlcY8', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Recruiter Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Employer Tutorial
-                    </div>
-                </div>
-                @elseif(auth()->user()->role == 1)
-                <!-- Show only Job Seeker Tutorial -->
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=kSu2dC4u9fE', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Job Seeker Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Job Seeker Tutorial
-                    </div>
-                </div>
-                @else
-                <!-- Show both tutorials if role is neither 1 nor 2 -->
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=EWjUo3mlcY8', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Recruiter Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Employer Tutorial
-                    </div>
-                </div>
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=kSu2dC4u9fE', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Job Seeker Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Job Seeker Tutorial
-                    </div>
-                </div>
-                @endif
-                @else
-                <!-- User not logged in - Show both tutorials -->
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=EWjUo3mlcY8', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Recruiter Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Employer Tutorial
-                    </div>
-                </div>
-                <div class="youtube" onclick="window.open('https://www.youtube.com/watch?v=kSu2dC4u9fE', '_blank')"
-                    style="cursor: pointer;">
-                    <div class="contact-label" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        title="Watch Job Seeker Tutorial">
-                        <i class="fab fa-youtube" style="color: red;"></i> Job Seeker Tutorial
-                    </div>
-                </div>
-                @endif
+
 
                 <!-- Keep your existing phone contact sections -->
-                <div class="phone-contact" onclick="callNumber('+919426428673')">
+                <div class="phone-contact" onclick="callNumber('+917984737571')">
                     <div class="contact-label">☎️ Primary Support</div>
-                    <div class="phone-number">+919426428673</div>
+                    <div class="phone-number">+917984737571</div>
                 </div>
 
                 <div class="phone-contact"
                     onclick="window.location.href='mailto:jobs@sgcci.in?subject=Subject&body=Body%20of%20email'">
                     <div class="contact-label">📧 Email</div>
-                    <div class="phone-number">jobs@sgcci.in</div>
+                    <div class="phone-number">maniyahiren154@gmail.com</div>
                 </div>
             </div>
         </div>
