@@ -13,7 +13,7 @@
 
                 <div class="relative group">
                     <a href="{{ route('about') }}" class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
-                        About uS
+                        About Us
                     </a>
                 </div>
 

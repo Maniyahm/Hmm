@@ -13,7 +13,7 @@
 
 </section>
 <div class="">
-    <img src="{{ asset('images/about-image.webp') }}" alt="Vision Icon" class="">
+    <img src="{{ asset('images/about-image.png') }}" alt="Vision Icon" class="">
 </div>
 <section class="about-section">
     <div class="about-content">
