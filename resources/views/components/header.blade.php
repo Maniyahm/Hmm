@@ -29,29 +29,9 @@
                     </a>
                 </div>
                 <div class="relative group">
-                    <button class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
-                        Careers
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-2 hidden group-hover:block z-50">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Open Positions</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Why Join Us</a>
-                    </div>
-                </div>
-
-                <div class="relative group">
-                    <button class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
-                        se
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 p-2 hidden group-hover:block z-50">
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Our Work</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Case Studies</a>
-                    </div>
+                    <a href="{{ route('contact') }}" class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
+                        Contact
+                    </a>
                 </div>
             </nav>
 
