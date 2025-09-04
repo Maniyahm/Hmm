@@ -29,8 +29,8 @@
                     </a>
                 </div>
                 <div class="relative group">
-                    <a href="{{ route('contact') }}" class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
-                        Contact
+                    <a href="{{ route('Carrier') }}" class="py-2 px-3 font-medium text-gray-800 hover:text-blue-600 flex items-center">
+                        Carrier
                     </a>
                 </div>
             </nav>

@@ -15,3 +15,4 @@ Route::get('/team',[HomeController::class,'team'])->name('team');
 Route::get('/about-us',[CommonController::class,'about'])->name('about');
 Route::get('/portfolio',[CommonController::class,'portfolio'])->name('portfolio');
 Route::get('/services',[CommonController::class,'service'])->name('service');
+Route::get('/Carrier',[CommonController::class,'Carrier'])->name('Carrier');
