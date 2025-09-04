@@ -14,4 +14,8 @@ class CommonController extends Controller
     {
         return view ('portfolio');
     }
+    public function service()
+    {
+        return view ('service');
+    }
 }

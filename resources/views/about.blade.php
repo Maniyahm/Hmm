@@ -12,9 +12,10 @@
     </div>
 
 </section>
-<div class="">
+<div class="flex justify-center mt-20 rounded-lg">
     <img src="{{ asset('images/about-image.png') }}" alt="Vision Icon" class="">
 </div>
+
 <section class="about-section">
     <div class="about-content">
         <h2 class="about-title">Who Are We?</h2>
