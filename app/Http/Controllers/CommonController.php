@@ -18,8 +18,9 @@ class CommonController extends Controller
     {
         return view ('service');
     }
-    public function Carrier()
+    public function Careers()
     {
-        return view ('Carrier');
+        return view ('Careers');
     }
+
 }
