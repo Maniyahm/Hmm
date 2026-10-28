@@ -24,7 +24,16 @@ class AppServiceProvider extends ServiceProvider
             }
         });
 
+        // Only load site settings for frontend views (skip admin panel)
         View::composer(['components.header', 'components.layout', 'components.footer'], function ($view) {
+            // Skip DB call on admin routes to avoid cold-start timeout
+            if (request()->is('admin*') || request()->is('livewire*')) {
+                $view->with('siteSettings', null);
+                $view->with('siteLogo', asset('images/logo.png'));
+                $view->with('siteName', 'Hm² Infotech');
+                return;
+            }
+
             try {
                 $settings = SiteSetting::current();
             } catch (\Throwable $e) {
