@@ -24,22 +24,34 @@ Route::get('/internal-setup', function () {
         abort(404);
     }
 
-    Artisan::call('migrate', ['--force' => true]);
-    $migrate = Artisan::output();
+    $step = request('step', 'all');
 
-    $seed = 'skipped';
-    if (Portfolio::query()->count() === 0) {
-        Artisan::call('db:seed', [
-            '--class' => 'Database\\Seeders\\PortfolioSeeder',
-            '--force' => true,
-        ]);
-        $seed = Artisan::output();
+    if ($step === 'migrate' || $step === 'all') {
+        Artisan::call('migrate', ['--force' => true]);
+        $migrate = trim(Artisan::output());
+        return response()->json(['ok' => true, 'step' => 'migrate', 'output' => $migrate]);
     }
 
-    return response()->json([
-        'ok' => true,
-        'migrate' => trim($migrate),
-        'seed' => is_string($seed) ? trim($seed) : $seed,
-        'projects' => Portfolio::query()->count(),
-    ]);
+    if ($step === 'seed') {
+        $seed = 'skipped';
+        if (Portfolio::query()->count() === 0) {
+            Artisan::call('db:seed', [
+                '--class' => 'Database\\Seeders\\PortfolioSeeder',
+                '--force' => true,
+            ]);
+            $seed = trim(Artisan::output());
+        }
+        return response()->json(['ok' => true, 'step' => 'seed', 'output' => $seed, 'projects' => Portfolio::query()->count()]);
+    }
+
+    if ($step === 'status') {
+        try {
+            $count = Portfolio::query()->count();
+            return response()->json(['ok' => true, 'projects' => $count, 'db' => 'connected']);
+        } catch (\Exception $e) {
+            return response()->json(['ok' => false, 'error' => $e->getMessage()]);
+        }
+    }
+
+    return response()->json(['ok' => false, 'msg' => 'Use ?step=migrate, ?step=seed, or ?step=status']);
 });
