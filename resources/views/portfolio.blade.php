@@ -25,11 +25,37 @@
                     data-category="{{ $project->category }}"
                     style="--i: {{ $loop->index }}"
                 >
-                    <article class="pf-card">
+                    <article class="pf-card pf-card-{{ $project->category }}">
+                        @if($project->category === 'app')
+                        {{-- Mobile App: phone mockup layout --}}
+                        <div class="pf-media pf-media-app">
+                            <span class="pf-badge pf-badge-app">Mobile App</span>
+                            <div class="phone-mockup">
+                                <div class="phone-frame">
+                                    <div class="phone-notch"></div>
+                                    <div class="phone-screen">
+                                        <img
+                                            src="{{ $project->imageUrl() }}"
+                                            alt="{{ $project->title }}"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="phone-home-bar"></div>
+                                </div>
+                            </div>
+                            <div class="pf-media-overlay">
+                                <span class="pf-view">
+                                    View project
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        @else
+                        {{-- Website: normal landscape --}}
                         <div class="pf-media">
-                            <span class="pf-badge pf-badge-{{ $project->category }}">
-                                {{ $project->category === 'app' ? 'Mobile App' : 'Website' }}
-                            </span>
+                            <span class="pf-badge pf-badge-website">Website</span>
                             <img
                                 src="{{ $project->imageUrl() }}"
                                 alt="{{ $project->title }}"
@@ -44,6 +70,7 @@
                                 </span>
                             </div>
                         </div>
+                        @endif
                         <div class="pf-body">
                             <h3 class="pf-name">{{ $project->title }}</h3>
                             <p class="pf-desc">{{ $project->description }}</p>
@@ -213,6 +240,85 @@
 
     .pf-item:hover .pf-media img {
         transform: scale(1.05);
+    }
+
+    /* Mobile App card — phone mockup */
+    .pf-media-app {
+        aspect-ratio: unset;
+        min-height: 280px;
+        background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .phone-mockup {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .phone-frame {
+        width: 130px;
+        height: 230px;
+        background: #111;
+        border-radius: 24px;
+        border: 3px solid #333;
+        box-shadow:
+            0 0 0 1px rgba(255,255,255,0.08),
+            0 20px 40px rgba(0,0,0,0.5),
+            inset 0 0 0 1px rgba(255,255,255,0.06);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+    }
+
+    .phone-notch {
+        width: 40px;
+        height: 8px;
+        background: #111;
+        border-radius: 0 0 8px 8px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+    }
+
+    .phone-screen {
+        width: 100%;
+        flex: 1;
+        overflow: hidden;
+        background: #000;
+    }
+
+    .phone-screen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .pf-item:hover .phone-screen img {
+        transform: scale(1.08);
+    }
+
+    .phone-home-bar {
+        width: 40px;
+        height: 4px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 999px;
+        margin: 6px auto;
+        flex-shrink: 0;
     }
 
     .pf-media-overlay {
