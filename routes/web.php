@@ -53,5 +53,24 @@ Route::get('/internal-setup', function () {
         }
     }
 
+    if ($step === 'admin') {
+        try {
+            $email = 'admin@hmminfotech.com';
+            $password = 'HmmAdmin@2026';
+            $user = \App\Models\User::where('email', $email)->first();
+            if (!$user) {
+                \App\Models\User::create([
+                    'name'     => 'Admin',
+                    'email'    => $email,
+                    'password' => bcrypt($password),
+                ]);
+                return response()->json(['ok' => true, 'msg' => 'Admin created', 'email' => $email, 'password' => $password]);
+            }
+            return response()->json(['ok' => true, 'msg' => 'Admin already exists', 'email' => $email]);
+        } catch (\Exception $e) {
+            return response()->json(['ok' => false, 'error' => $e->getMessage()]);
+        }
+    }
+
     return response()->json(['ok' => false, 'msg' => 'Use ?step=migrate, ?step=seed, or ?step=status']);
 });
