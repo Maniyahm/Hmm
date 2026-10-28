@@ -14,11 +14,15 @@ class CommonController extends Controller
 
     public function portfolio()
     {
-        $portfolios = Portfolio::query()
-            ->where('is_active', true)
-            ->orderBy('sort_order')
-            ->orderBy('id')
-            ->get();
+        try {
+            $portfolios = Portfolio::query()
+                ->where('is_active', true)
+                ->orderBy('sort_order')
+                ->orderBy('id')
+                ->get();
+        } catch (\Throwable $e) {
+            $portfolios = collect();
+        }
 
         return view('portfolio', compact('portfolios'));
     }
