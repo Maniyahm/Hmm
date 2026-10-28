@@ -41,8 +41,7 @@
 <!-- Achieve More Section -->
 @include('components.vision')
 
-@include('components.industry') 
-@include('components.leadership')
+@include('components.industry')
 
 <!-- Technologies Section with Holographic Display -->
 <section class="tech-section">
