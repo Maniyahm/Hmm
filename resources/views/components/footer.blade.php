@@ -13,10 +13,8 @@
                 <!-- Logo & About -->
                 <div class="md:col-span-1">
                     <div class="flex items-center mb-4">
-                        <svg class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 19L12 4L21 19H3Z" stroke="white" stroke-width="2" />
-                        </svg>
-                        <span class="text-white font-bold uppercase">hm² infotech</span>
+                        <img src="{{ $siteLogo ?? asset('images/logo.png') }}" alt="{{ $siteName ?? 'Hm² Infotech' }}" class="h-10 mr-2 object-contain">
+                        <span class="text-white font-bold uppercase">{{ $siteName ?? 'hm² infotech' }}</span>
                     </div>
                     <p class="text-sm mb-4">
                         A small river named Duden flows by their place and supplies it with the necessary regelialia.

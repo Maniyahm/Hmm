@@ -4,7 +4,7 @@
         <div class="flex items-center justify-between">
             <!-- Logo -->
             <a href="{{ route('home') }}" class="flex items-center">
-                <img src="{{ asset('images/logo.png') }}" alt="HM²" class="h-12">
+                <img src="{{ $siteLogo ?? asset('images/logo.png') }}" alt="{{ $siteName ?? 'HM²' }}" class="h-12">
             </a>
 
             <!-- Navigation -->
