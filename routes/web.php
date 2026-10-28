@@ -74,12 +74,13 @@ Route::get('/internal-setup', function () {
 
     if ($step === 'reseed') {
         try {
-            Portfolio::query()->delete();
+            Portfolio::truncate();
             Artisan::call('db:seed', [
                 '--class' => 'Database\\Seeders\\PortfolioSeeder',
                 '--force' => true,
             ]);
-            return response()->json(['ok' => true, 'msg' => 'Portfolio reseeded', 'projects' => Portfolio::query()->count()]);
+            $count = Portfolio::query()->count();
+            return response()->json(['ok' => true, 'step' => 'reseed', 'projects' => $count]);
         } catch (\Exception $e) {
             return response()->json(['ok' => false, 'error' => $e->getMessage()]);
         }
