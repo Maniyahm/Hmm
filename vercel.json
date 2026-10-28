@@ -36,6 +36,7 @@
     "VIEW_COMPILED_PATH": "/tmp",
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
-    "SESSION_DRIVER": "cookie"
+    "SESSION_DRIVER": "file",
+    "SESSION_FILES": "/tmp/sessions"
   }
 }
