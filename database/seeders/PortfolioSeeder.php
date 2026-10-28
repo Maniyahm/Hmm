@@ -12,35 +12,35 @@ class PortfolioSeeder extends Seeder
     {
         SiteSetting::current()->update([
             'logo' => 'images/logo.png',
-            'site_name' => 'HmÂ² Infotech',
+            'site_name' => 'Hm² Infotech',
         ]);
 
         if (Portfolio::query()->exists()) {
             return;
         }
 
-        $projects = [
+        \ = [
             [
-                'title' => 'Job-portel',
-                'description' => 'SGCCI Job Portal, where recruiters can find top talent and employees can explore exciting career opportunities. Whether you\'re hiring or job hunting, we connect the right people to the right roles.',
-                'image' => 'images/job.png',
-                'link' => 'https://jobportal.sgcci.in/',
+                'title' => 'Black Rossy',
+                'description' => 'E-commerce platform for fashion and accessories. Clothing and bags from our shelves. Guest checkout with cash on delivery.',
+                'image' => 'images/blackrossy.png',
+                'link' => 'https://blackrossy.com/',
                 'category' => 'website',
                 'sort_order' => 1,
             ],
             [
-                'title' => 'App.Affyscout',
-                'description' => 'AffyScout, the ultimate platform for affiliate marketing and brand collaborations. Discover new opportunities, track your performance, and boost your earnings by partnering with top brands.',
-                'image' => 'images/affy.png',
-                'link' => 'https://app.affyscout.com/',
+                'title' => 'Job Portal',
+                'description' => 'Unique World Jobs - An easy to use end-to-end hiring platform. Bridging the gap in recruitment process from sourcing to offer management.',
+                'image' => 'images/jobportal.png',
+                'link' => 'https://portal.uniqueworldjobs.com/',
                 'category' => 'website',
                 'sort_order' => 2,
             ],
             [
-                'title' => 'Movie Map Store',
-                'description' => 'Explore MovieMap, your go-to platform for discovering and tracking the latest movies and shows. Get personalized recommendations and stay updated with all the entertainment you love.',
-                'image' => 'images/movie.png',
-                'link' => 'https://moviemap.online/',
+                'title' => 'METAG',
+                'description' => 'A product by Incharge Innovations Lab. Security-focused emergency helper platform with 4-step process for emergency assistance.',
+                'image' => 'images/metag.png',
+                'link' => 'https://metag.info/',
                 'category' => 'website',
                 'sort_order' => 3,
             ],
@@ -54,7 +54,7 @@ class PortfolioSeeder extends Seeder
             ],
             [
                 'title' => 'Bio-diversity',
-                'description' => 'Discover and protect biodiversity with our app, designed to help you explore and contribute to the preservation of wildlife and ecosystems. Join the movement to safeguard nature and its diverse species.',
+                'description' => 'Discover and protect biodiversity with our app, designed to help you explore and contribute to the preservation of wildlife and ecosystems.',
                 'image' => 'images/bio.png',
                 'link' => 'https://play.google.com/store/apps/details?id=com.biodiversity.org&hl=en_IN',
                 'category' => 'app',
@@ -62,7 +62,7 @@ class PortfolioSeeder extends Seeder
             ],
             [
                 'title' => 'Astrology Horoscope',
-                'description' => 'Developed a captivating Astrology Horoscope app with Flutter, offering personalized daily predictions, zodiac insights, and compatibility analyses. The app provides users with an engaging platform to explore it.',
+                'description' => 'Developed a captivating Astrology Horoscope app with Flutter, offering personalized daily predictions, zodiac insights, and compatibility analyses.',
                 'image' => 'images/doctor.png',
                 'link' => 'https://play.google.com/store/apps/details?id=com.helloastro.customer',
                 'category' => 'app',
@@ -70,7 +70,7 @@ class PortfolioSeeder extends Seeder
             ],
             [
                 'title' => 'Edutech',
-                'description' => 'Developed Eduteck, an educational app powered by Flutter, offering interactive learning modules, quizzes, and progress tracking for an engaging learning experience.',
+                'description' => 'Developed Eduteck, an educational app powered by Flutter, offering interactive learning modules, quizzes, and progress tracking.',
                 'image' => 'images/edu.png',
                 'link' => 'https://play.google.com/store/apps/details?id=com.edutech.edutech&hl=en&gl=US',
                 'category' => 'app',
@@ -78,9 +78,9 @@ class PortfolioSeeder extends Seeder
             ],
         ];
 
-        foreach ($projects as $project) {
+        foreach (\ as \) {
             Portfolio::create([
-                ...$project,
+                ...\,
                 'is_active' => true,
             ]);
         }
