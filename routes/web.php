@@ -72,5 +72,18 @@ Route::get('/internal-setup', function () {
         }
     }
 
+    if ($step === 'reseed') {
+        try {
+            Portfolio::query()->delete();
+            Artisan::call('db:seed', [
+                '--class' => 'Database\\Seeders\\PortfolioSeeder',
+                '--force' => true,
+            ]);
+            return response()->json(['ok' => true, 'msg' => 'Portfolio reseeded', 'projects' => Portfolio::query()->count()]);
+        } catch (\Exception $e) {
+            return response()->json(['ok' => false, 'error' => $e->getMessage()]);
+        }
+    }
+
     return response()->json(['ok' => false, 'msg' => 'Use ?step=migrate, ?step=seed, or ?step=status']);
 });
